@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 1f;
-    public float jumpForce = 5f;
+    public float moveSpeed = 5f;
+    public float jumpForce = 7f;
+    public float maxSpeed = 8f;
+    public float airControl = 0.5f; // Less control in air (0-1)
+    
     private Rigidbody2D rb;
     private bool isGrounded;
 
@@ -13,6 +16,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        // Set the Rigidbody2D to not rotate
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     // Update is called once per frame
@@ -21,14 +26,28 @@ public class PlayerController : MonoBehaviour
         // Get input from both A-D keys and arrow keys
         float moveInput = Input.GetAxisRaw("Horizontal");
         
-        // Apply force to move the player
-        Vector2 force = new Vector2(moveInput * moveSpeed, 0f);
-        rb.AddForce(force, ForceMode2D.Force);
+        // Calculate movement speed
+        float currentSpeed = moveInput * moveSpeed;
+        
+        // If in air, reduce movement control
+        if (!isGrounded)
+        {
+            currentSpeed *= airControl;
+        }
+        
+        // Apply movement
+        rb.velocity = new Vector2(currentSpeed, rb.velocity.y);
+
+        // Clamp the maximum speed
+        if (Mathf.Abs(rb.velocity.x) > maxSpeed)
+        {
+            rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * maxSpeed, rb.velocity.y);
+        }
 
         // Jump when space is pressed and player is grounded
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isGrounded = false;
         }
     }

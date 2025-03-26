@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 1154014063}
   m_Layer: 0
   m_Name: hero_0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -514,8 +514,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f7bb8af28047941b718294579c11e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  jumpForce: 2
+  moveSpeed: 5
+  jumpForce: 5
+  maxSpeed: 8
 --- !u!1 &1714230987
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +531,7 @@ GameObject:
   - component: {fileID: 1714230991}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
