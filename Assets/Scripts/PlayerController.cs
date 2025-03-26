@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,10 +9,17 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 7f;
     public float maxSpeed = 8f;
     public float airControl = 0.5f; // Less control in air (0-1)
+    public int maxHealth = 3;
+    
+    [Header("UI")]
+    public TextMeshProUGUI healthText; // Reference to UI text for health display
     
     private Rigidbody2D rb;
     private bool isGrounded;
     private float currentMoveInput;
+    private int currentHealth;
+    private bool isDead;
+    private GameStateManager gameStateManager;
 
     // Start is called before the first frame update
     void Start()
@@ -19,11 +27,24 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         // Set the Rigidbody2D to not rotate
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        currentHealth = maxHealth;
+        isDead = false;
+        gameStateManager = FindObjectOfType<GameStateManager>();
+        
+        if (gameStateManager == null)
+        {
+            Debug.LogError("PlayerController: GameStateManager not found in scene!");
+        }
+        
+        Debug.Log($"PlayerController: Started with {currentHealth} health");
+        UpdateHealthUI();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isDead) return;
+
         // Get input from both A-D keys and arrow keys
         currentMoveInput = Input.GetAxisRaw("Horizontal");
         
@@ -56,9 +77,25 @@ public class PlayerController : MonoBehaviour
     // Check if player is grounded
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log($"PlayerController: Collision with {collision.gameObject.name} (Tag: {collision.gameObject.tag})");
+        
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+        }
+        else if (collision.gameObject.CompareTag("Enemy") && !isDead)
+        {
+            Debug.Log($"PlayerController: Collision with Enemy detected! Enemy name: {collision.gameObject.name}");
+            EnemyController enemy = collision.gameObject.GetComponent<EnemyController>();
+            if (enemy != null)
+            {
+                Debug.Log($"PlayerController: Found EnemyController on {collision.gameObject.name}");
+                TakeDamage(enemy.damage);
+            }
+            else
+            {
+                Debug.LogError($"PlayerController: EnemyController not found on {collision.gameObject.name}");
+            }
         }
     }
 
@@ -67,6 +104,45 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if (isDead) return;
+        
+        currentHealth -= damage;
+        Debug.Log($"PlayerController: Took {damage} damage. Current health: {currentHealth}/{maxHealth}");
+        UpdateHealthUI();
+        
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void UpdateHealthUI()
+    {
+        if (healthText != null)
+        {
+            healthText.text = $"Health: {currentHealth}/{maxHealth}";
+        }
+    }
+
+    private void Die()
+    {
+        Debug.Log("PlayerController: Player died!");
+        isDead = true;
+        rb.velocity = Vector2.zero;
+        // Notify GameStateManager
+        if (gameStateManager != null)
+        {
+            Debug.Log("PlayerController: Notifying GameStateManager of death");
+            gameStateManager.OnPlayerDeath();
+        }
+        else
+        {
+            Debug.LogError("PlayerController: GameStateManager is null when trying to notify death!");
         }
     }
 
@@ -79,5 +155,15 @@ public class PlayerController : MonoBehaviour
     public float GetMoveDirection()
     {
         return currentMoveInput;
+    }
+
+    public bool IsDead()
+    {
+        return isDead;
+    }
+
+    public int GetCurrentHealth()
+    {
+        return currentHealth;
     }
 }

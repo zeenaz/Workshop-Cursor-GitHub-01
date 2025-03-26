@@ -2,47 +2,86 @@
 
 ## Game Overview
 - **Title**: [Game Title]
-- **Genre**: 2D Platformer
-- **Target Platform**: [Platforms]
-- **Target Audience**: [Age Group/Player Type]
-- **Unique Selling Point**: [What makes this game special?]
+- **Genre**: 2D Platformer with Combat
+- **Target Platform**: PC (Windows)
+- **Target Audience**: Casual gamers, 12+
+- **Unique Selling Point**: Fast-paced platforming with strategic combat encounters
 
 ## Core Gameplay Loop
-1. [Main gameplay loop description]
-2. [Secondary gameplay loops]
-3. [Progression system]
+1. Player navigates through platforming levels
+2. Encounters enemies that must be avoided or defeated
+3. Upon death, player can restart from checkpoint or main menu
+4. Progress through increasingly challenging levels
 
 ## Game Features
 ### Core Mechanics
-- [Mechanic 1]
-  - Description:
-  - Purpose:
-  - Implementation notes:
+- Player Movement
+  - Description: Smooth 2D platforming controls with variable air control
+  - Purpose: Provide responsive and satisfying movement
+  - Implementation notes: Already implemented in PlayerController.cs
 
-- [Mechanic 2]
-  - Description:
-  - Purpose:
-  - Implementation notes:
+- Combat System
+  - Description: Collision-based combat with enemies
+  - Purpose: Add challenge and strategic elements
+  - Implementation notes: Need to implement EnemyController and CombatSystem
+
+- State Management
+  - Description: Track player and enemy states (alive/dead)
+  - Purpose: Manage game flow and transitions
+  - Implementation notes: Need to implement GameStateManager
+
+- Menu System
+  - Description: Main menu and game over screens
+  - Purpose: Provide game control and restart functionality
+  - Implementation notes: Need to implement UIManager and MenuController
 
 ### Level Design
-- [Level design principles]
-- [Progression structure]
-- [Difficulty curve]
+- Progressive difficulty curve
+- Strategic enemy placement
+- Checkpoint system
+- Safe zones for recovery
 
 ### Art Style
-- [Visual direction]
-- [Color palette]
-- [Animation style]
+- Clean, modern pixel art
+- High contrast for visibility
+- Clear visual feedback for states and actions
 
 ## Story & Setting
-- [World background]
-- [Main characters]
-- [Key story elements]
+- Simple narrative focused on survival
+- Player character as a lone adventurer
+- Various enemy types with distinct behaviors
 
 ## Technical Requirements
-- [Engine requirements]
-- [Asset specifications]
-- [Performance targets]
+- Unity 2D
+- Rigidbody2D for physics
+- Collision detection system
+- State management system
+- UI system for menus
+
+## Systems to Implement
+1. Enemy System
+   - EnemyController.cs
+   - EnemyState.cs
+   - EnemySpawner.cs
+
+2. Combat System
+   - CombatManager.cs
+   - DamageSystem.cs
+
+3. Game State Management
+   - GameStateManager.cs
+   - CheckpointSystem.cs
+
+4. UI System
+   - UIManager.cs
+   - MenuController.cs
+   - GameOverScreen.cs
+
+## Success Metrics
+- Level completion rates
+- Death frequency analysis
+- Player engagement time
+- Restart frequency
 
 ## Monetization (if applicable)
 - [Monetization strategy]
@@ -52,9 +91,4 @@
 ## Future Expansion
 - [Potential DLC/Updates]
 - [Community features]
-- [Long-term roadmap]
-
-## Success Metrics
-- [Key performance indicators]
-- [Player engagement metrics]
-- [Monetization targets] 
+- [Long-term roadmap] 

@@ -1,6 +1,31 @@
 # Unity 2D Platformer Demo
 
-A simple 2D platformer demo built with Unity, designed to help beginners learn Unity basics, Cursor IDE, and GitHub integration.
+[English](#next-tasks) | [中文](#下一阶段任务)
+
+## Next Tasks ⏳
+The following tasks are currently in progress. For detailed instructions, see [NextSessionTasks.md](Documentation/NextSessionTasks.md)
+
+### High Priority Tasks
+1. UI Implementation
+   - Create health display system
+   - Set up game state UI (main menu, pause, game over)
+   - Implement UI manager
+
+2. Game State Management
+   - Complete GameStateManager setup
+   - Implement death and restart system
+   - Add scene management
+
+3. Enemy System
+   - Configure enemy behavior
+   - Set up collision detection
+   - Implement damage system
+
+### Testing Requirements
+- Verify player-enemy interactions
+- Test UI functionality
+- Check game state transitions
+- Validate restart system
 
 ## Project Overview
 
@@ -96,7 +121,32 @@ This project is open source and available under the MIT License.
 
 # Unity 2D 平台游戏演示 🎮
 
-这是一个用 Unity 制作的简单 2D 平台游戏演示，专门为想要学习 Unity 基础、Cursor IDE 和 GitHub 的同学们设计！🚀
+[English](#next-tasks) | [中文](#下一阶段任务)
+
+## 下一阶段任务 ⏳
+当前正在进行的任务。详细说明请查看 [NextSessionTasks.md](Documentation/NextSessionTasks.md)
+
+### 优先任务
+1. UI实现
+   - 创建生命值显示系统
+   - 设置游戏状态UI（主菜单、暂停、游戏结束）
+   - 实现UI管理器
+
+2. 游戏状态管理
+   - 完成GameStateManager设置
+   - 实现死亡和重启系统
+   - 添加场景管理
+
+3. 敌人系统
+   - 配置敌人行为
+   - 设置碰撞检测
+   - 实现伤害系统
+
+### 测试要求
+- 验证玩家-敌人交互
+- 测试UI功能
+- 检查游戏状态转换
+- 验证重启系统
 
 ## 项目简介 🎯
 
