@@ -273,7 +273,7 @@ SpriteRenderer:
   m_Size: {x: 1.75, y: 1.5625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &191945356
@@ -525,6 +525,7 @@ GameObject:
   - component: {fileID: 1154014062}
   - component: {fileID: 1154014061}
   - component: {fileID: 1154014063}
+  - component: {fileID: 1154014064}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -690,6 +691,18 @@ MonoBehaviour:
   jumpForce: 5
   maxSpeed: 8
   airControl: 0.5
+--- !u!114 &1154014064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154014058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b9dfe1ef7d0e74f86e54511666d73d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1601650590
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,7 +771,7 @@ SpriteRenderer:
   m_Size: {x: 1.6875, y: 1.8125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1601650592

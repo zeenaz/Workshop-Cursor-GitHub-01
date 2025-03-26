@@ -11,13 +11,12 @@ public class PlayerController : MonoBehaviour
     
     private Rigidbody2D rb;
     private bool isGrounded;
-    private SpriteRenderer spriteRenderer;
+    private float currentMoveInput;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
         // Set the Rigidbody2D to not rotate
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
@@ -26,10 +25,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // Get input from both A-D keys and arrow keys
-        float moveInput = Input.GetAxisRaw("Horizontal");
+        currentMoveInput = Input.GetAxisRaw("Horizontal");
         
         // Calculate movement speed
-        float currentSpeed = moveInput * moveSpeed;
+        float currentSpeed = currentMoveInput * moveSpeed;
         
         // If in air, reduce movement control
         if (!isGrounded)
@@ -44,12 +43,6 @@ public class PlayerController : MonoBehaviour
         if (Mathf.Abs(rb.velocity.x) > maxSpeed)
         {
             rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * maxSpeed, rb.velocity.y);
-        }
-
-        // Flip sprite based on movement direction
-        if (moveInput != 0)
-        {
-            spriteRenderer.flipX = moveInput > 0;
         }
 
         // Jump when space is pressed and player is grounded
@@ -75,5 +68,16 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = false;
         }
+    }
+
+    // Public methods for other scripts to access player state
+    public bool IsInAir()
+    {
+        return !isGrounded;
+    }
+
+    public float GetMoveDirection()
+    {
+        return currentMoveInput;
     }
 }
