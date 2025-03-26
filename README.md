@@ -15,6 +15,15 @@ This is a minimal demo featuring:
 - Sprite flipping based on movement direction
 - Basic physics-based movement
 
+## Documentation
+
+The project includes comprehensive documentation in the `Documentation` folder:
+
+- [Development Log](Documentation/DevelopmentLog.md) - Daily development updates and progress tracking
+- [Game Concept Design](Documentation/GameConceptDesign.md) - Game design document and vision
+- [Technical Design](Documentation/TechnicalDesign.md) - Technical specifications and architecture
+- [Naming Conventions](Documentation/NamingConventions.md) - Asset and code naming standards
+
 ## Setup Instructions
 
 1. **Unity Setup**
@@ -53,6 +62,12 @@ Assets/
 │   └── PlayerController.cs    # Main player movement script
 └── Scenes/
     └── Demo Scene             # Main demo scene
+
+Documentation/
+├── DevelopmentLog.md          # Daily development updates
+├── GameConceptDesign.md       # Game design document
+├── TechnicalDesign.md         # Technical specifications
+└── NamingConventions.md       # Asset naming standards
 ```
 
 ## Getting Started
@@ -96,6 +111,15 @@ This project is open source and available under the MIT License.
 - 角色会根据移动方向自动转向
 - 基于物理的移动系统
 
+## 文档 📚
+
+项目包含完整的文档，位于 `Documentation` 文件夹：
+
+- [开发日志](Documentation/DevelopmentLog.md) - 每日开发更新和进度追踪
+- [游戏概念设计](Documentation/GameConceptDesign.md) - 游戏设计文档和愿景
+- [技术设计](Documentation/TechnicalDesign.md) - 技术规格和架构
+- [命名规范](Documentation/NamingConventions.md) - 资源和代码命名标准
+
 ## 设置说明 🛠️
 
 1. **Unity 设置**
@@ -134,6 +158,12 @@ Assets/
 │   └── PlayerController.cs    # 玩家移动控制脚本
 └── Scenes/
     └── Demo Scene             # 演示场景
+
+Documentation/
+├── DevelopmentLog.md          # 每日开发更新
+├── GameConceptDesign.md       # 游戏设计文档
+├── TechnicalDesign.md         # 技术规格
+└── NamingConventions.md       # 资源命名规范
 ```
 
 ## 开始使用 🚀
