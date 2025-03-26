@@ -11,11 +11,13 @@ public class PlayerController : MonoBehaviour
     
     private Rigidbody2D rb;
     private bool isGrounded;
+    private SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         // Set the Rigidbody2D to not rotate
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
@@ -42,6 +44,12 @@ public class PlayerController : MonoBehaviour
         if (Mathf.Abs(rb.velocity.x) > maxSpeed)
         {
             rb.velocity = new Vector2(Mathf.Sign(rb.velocity.x) * maxSpeed, rb.velocity.y);
+        }
+
+        // Flip sprite based on movement direction
+        if (moveInput != 0)
+        {
+            spriteRenderer.flipX = moveInput > 0;
         }
 
         // Jump when space is pressed and player is grounded
