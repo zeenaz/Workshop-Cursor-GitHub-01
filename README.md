@@ -1,242 +1,114 @@
-# Unity 2D Platformer Demo
+# CIGDI Prototyping Workshop: 2D Platformer in Unity
 
-[English](#next-tasks) | [中文](#下一阶段任务)
+Welcome to the open-source Unity project for the CIGDI Framework Prototyping Workshop! This project is designed to be a hands-on example of how to use the **Co-Intelligence Game Development Ideation (CIGDI)** framework to rapidly prototype a 2D platformer.
 
-## Next Tasks ⏳
-The following tasks are currently in progress. For detailed instructions, see [NextSessionTasks.md](Documentation/NextSessionTasks.md)
-
-### High Priority Tasks
-1. UI Implementation
-   - Create health display system
-   - Set up game state UI (main menu, pause, game over)
-   - Implement UI manager
-
-2. Game State Management
-   - Complete GameStateManager setup
-   - Implement death and restart system
-   - Add scene management
-
-3. Enemy System
-   - Configure enemy behavior
-   - Set up collision detection
-   - Implement damage system
-
-### Testing Requirements
-- Verify player-enemy interactions
-- Test UI functionality
-- Check game state transitions
-- Validate restart system
+This repository is not just a game demo; it's a living document and a practical guide that demonstrates a structured, AI-assisted workflow for turning an idea into a playable prototype efficiently.
 
 ## Project Overview
 
-This is a minimal demo featuring:
-- A single player character with basic movement controls
-- One demo scene with a ground platform
-- A simple player controller script
-
-### Features
-- Left/Right movement (A/D or Arrow keys)
-- Jumping (Spacebar)
-- Sprite flipping based on movement direction
-- Basic physics-based movement
-
-## Documentation
-
-The project includes comprehensive documentation in the `Documentation` folder:
-
-- [Development Log](Documentation/DevelopmentLog.md) - Daily development updates and progress tracking
-- [Game Concept Design](Documentation/GameConceptDesign.md) - Game design document and vision
-- [Technical Design](Documentation/TechnicalDesign.md) - Technical specifications and architecture
-- [Naming Conventions](Documentation/NamingConventions.md) - Asset and code naming standards
-
-## Setup Instructions
-
-1. **Unity Setup**
-   - Open the project in Unity Hub
-   - Make sure you have Unity 2D template installed
-   - Open the demo scene
-
-2. **Player Setup**
-   - The player GameObject should have:
-     - SpriteRenderer component
-     - Rigidbody2D component (set to Dynamic)
-     - BoxCollider2D component
-     - PlayerController script attached
-
-3. **Ground Setup**
-   - Create a ground GameObject
-   - Add BoxCollider2D component
-   - Tag it as "Ground"
-
-## Controls
-- **Move Left**: A key or Left Arrow
-- **Move Right**: D key or Right Arrow
-- **Jump**: Spacebar
-
-## Learning Objectives
-This project serves as a starting point for:
-- Understanding Unity's 2D physics system
-- Learning basic C# scripting in Unity
-- Getting familiar with Cursor IDE
-- Basic GitHub workflow
-
-## Project Structure
-```
-Assets/
-├── Scripts/
-│   └── PlayerController.cs    # Main player movement script
-└── Scenes/
-    └── Demo Scene             # Main demo scene
-
-Documentation/
-├── DevelopmentLog.md          # Daily development updates
-├── GameConceptDesign.md       # Game design document
-├── TechnicalDesign.md         # Technical specifications
-└── NamingConventions.md       # Asset naming standards
-```
-
-## Getting Started
-1. Clone this repository
-2. Open the project in Unity Hub
-3. Open the demo scene
-4. Press Play to test the controls
-
-## Requirements
-- Unity 2022.3 or later
-- Unity 2D template
-- Cursor IDE (recommended)
-- Basic understanding of Git/GitHub
-
-## Contributing
-Feel free to fork this project and experiment with:
-- Adding new features
-- Modifying movement parameters
-- Creating new scenes
-- Adding animations
-
-## License
-This project is open source and available under the MIT License.
+This project is a minimal but functional 2D platformer featuring:
+- A single player character with physics-based movement (move and jump).
+- A basic enemy system with collision-based combat.
+- A simple UI and Game State Manager to handle health, menus, and restart conditions.
+- A complete set of documentation designed around the CIGDI framework.
 
 ---
 
-# Unity 2D 平台游戏演示 🎮
+## What is the CIGDI Framework?
 
-[English](#next-tasks) | [中文](#下一阶段任务)
+Before diving into the project, it's important to understand the workflow we're using. **CIGDI** is a structured methodology for the chaotic early stages of game development. It's designed to help solo developers and small teams build better prototypes, faster.
 
-## 下一阶段任务 ⏳
-当前正在进行的任务。详细说明请查看 [NextSessionTasks.md](Documentation/NextSessionTasks.md)
+The core philosophy is **Co-Intelligence**: treating modern AI not just as a tool, but as a creative partner or a junior assistant. We use AI to streamline the tedious parts of development so we can focus on what's truly important: **making a great game.**
 
-### 优先任务
-1. UI实现
-   - 创建生命值显示系统
-   - 设置游戏状态UI（主菜单、暂停、游戏结束）
-   - 实现UI管理器
+This Unity project and its `Documentation/` folder serve as a real-world example of the CIGDI process in action.
 
-2. 游戏状态管理
-   - 完成GameStateManager设置
-   - 实现死亡和重启系统
-   - 添加场景管理
+### How This Project Uses CIGDI
 
-3. 敌人系统
-   - 配置敌人行为
-   - 设置碰撞检测
-   - 实现伤害系统
+* **Game Concept & Design (`GameConceptDesign.md`):** This is the output of our initial **AI-Enhanced Concept Generation** and **AI-Assisted Research**. We used AI to brainstorm core mechanics and structure our initial Game Design Document.
+* **Technical Design (`TechnicalDesign.md`):** This document outlines the core systems. An AI assistant can help draft these technical specs based on the GDD, saving valuable time.
+* **Development Log (`DevelopmentLog.md`):** This tracks our progress, challenges, and solutions, creating a knowledge base that AI can later summarize to identify patterns or recurring issues.
+* **Prototyping Sprints (`NextSessionTasks.md`):** This shows how we break down large goals (like implementing an enemy system) into small, manageable tasks for a development sprint. The initial plan in `TempPlan.md` was a raw "braindump" that we refined into these actionable steps, a process AI can facilitate.
 
-### 测试要求
-- 验证玩家-敌人交互
-- 测试UI功能
-- 检查游戏状态转换
-- 验证重启系统
+---
 
-## 项目简介 🎯
+## Getting Started
 
-这是一个超级简单的演示项目，包含：
-- 一个可以移动的玩家角色 🧙‍♂️
-- 一个包含地面平台的演示场景 🌍
-- 一个简单的玩家控制脚本 💻
+### Requirements
+* Unity 2022.3 or later
+* A code editor like Visual Studio or Rider (Cursor IDE is recommended for its integrated AI features).
+* A basic understanding of Git/GitHub.
 
-### 功能特点 ✨
-- 左右移动（A/D 或方向键）
-- 跳跃（空格键）
-- 角色会根据移动方向自动转向
-- 基于物理的移动系统
+### Setup Instructions
+1.  **Clone the Repository:**
+    ```bash
+    git clone [your-repository-url]
+    ```
+2.  **Open in Unity:** Open the project folder using Unity Hub.
+3.  **Explore the Scene:** The main scene is located in `Assets/Scenes/`. Open it to see the player, ground, and enemy setup.
+4.  **Press Play:** Hit the Play button in the Unity Editor to test the current build.
 
-## 文档 📚
+### Controls
+* **Move Left/Right:** `A`/`D` or `Left`/`Right` Arrow Keys
+* **Jump:** `Spacebar`
 
-项目包含完整的文档，位于 `Documentation` 文件夹：
+---
 
-- [开发日志](Documentation/DevelopmentLog.md) - 每日开发更新和进度追踪
-- [游戏概念设计](Documentation/GameConceptDesign.md) - 游戏设计文档和愿景
-- [技术设计](Documentation/TechnicalDesign.md) - 技术规格和架构
-- [命名规范](Documentation/NamingConventions.md) - 资源和代码命名标准
+## Current Development Sprint ⏳
 
-## 设置说明 🛠️
+This section tracks the immediate tasks for the current development phase. The goal is to implement a complete gameplay loop where the player can be defeated by an enemy and restart the game.
 
-1. **Unity 设置**
-   - 在 Unity Hub 中打开项目
-   - 确保安装了 Unity 2D 模板
-   - 打开演示场景
+### High-Priority Tasks
+1.  **UI Implementation:**
+    * Create a functional health display system on the main UI Canvas.
+    * Set up and link the UI panels for the Main Menu, Pause Menu, and Game Over screen in the `UIManager`.
+2.  **Game State Management:**
+    * Complete the `GameStateManager` to handle scene transitions (e.g., from Main Menu to Game).
+    * Implement the player death and game restart system.
+3.  **Enemy System:**
+    * Finalize enemy behavior logic in the `EnemyController`.
+    * Ensure the collision-based damage system is working correctly.
 
-2. **玩家设置**
-   - 玩家游戏对象需要包含：
-     - SpriteRenderer 组件（显示角色）
-     - Rigidbody2D 组件（设置为 Dynamic）
-     - BoxCollider2D 组件（碰撞检测）
-     - PlayerController 脚本
+### Testing Checklist for this Sprint
+- [ ] Does the UI health display update correctly when the player takes damage?
+- [ ] Does the player die when health reaches 0?
+- [ ] Does the "Game Over" screen appear upon player death?
+- [ ] Does the restart functionality work as intended from the Game Over screen?
+- [ ] Do all buttons in the Main Menu and Pause Menu work correctly?
 
-3. **地面设置**
-   - 创建地面游戏对象
-   - 添加 BoxCollider2D 组件
-   - 将其标签设置为 "Ground"
+*(For more granular, step-by-step instructions for these tasks, see the [NextSessionTasks.md](Documentation/NextSessionTasks.md) file.)*
 
-## 操作方式 🎮
-- **向左移动**：A 键或左方向键
-- **向右移动**：D 键或右方向键
-- **跳跃**：空格键
+---
 
-## 学习目标 📚
-这个项目可以帮助你：
-- 理解 Unity 的 2D 物理系统
-- 学习 Unity 中的 C# 脚本编写
-- 熟悉 Cursor IDE 的使用
-- 掌握基本的 GitHub 工作流程
+## Project Structure & Documentation
 
-## 项目结构 📁
-```
+A clean, well-organized project is a core principle of the CIGDI framework.
+
+### Project Folders
+
 Assets/
-├── Scripts/
-│   └── PlayerController.cs    # 玩家移动控制脚本
-└── Scenes/
-    └── Demo Scene             # 演示场景
-
-Documentation/
-├── DevelopmentLog.md          # 每日开发更新
-├── GameConceptDesign.md       # 游戏设计文档
-├── TechnicalDesign.md         # 技术规格
-└── NamingConventions.md       # 资源命名规范
-```
-
-## 开始使用 🚀
-1. 克隆这个仓库
-2. 在 Unity Hub 中打开项目
-3. 打开演示场景
-4. 点击播放按钮测试控制
-
-## 环境要求 ⚙️
-- Unity 2022.3 或更高版本
-- Unity 2D 模板
-- Cursor IDE（推荐使用）
-- 基本的 Git/GitHub 知识
-
-## 参与贡献 🤝
-欢迎同学们来参与这个项目！你可以：
-- 添加新功能
-- 修改移动参数
-- 创建新场景
-- 添加动画效果
-
-## 许可证 🫡
-本项目采用 MIT 许可证开源。
+├── Scripts/            # All C# scripts, organized by function
+├── Scenes/             # All game scenes
+├── Prefabs/            # Reusable GameObjects like Player, Enemy
+├── Sprites/            # All 2D art assets
+└── ... (other asset folders)
 
 
+### Documentation Folder
+All our planning and design documents live in the `Documentation/` folder at the root of the repository. This separation keeps our game assets clean while making the "paperwork" easily accessible.
 
+* **[Game Concept Design](Documentation/GameConceptDesign.md):** The "Why" and "What." Our high-level vision, core gameplay loop, and features.
+* **[Technical Design](Documentation/TechnicalDesign.md):** The "How." The architecture and technical specifications for our game's systems.
+* **[Development Log](Documentation/DevelopmentLog.md):** The "When." A running log of our progress, challenges, and decisions.
+* **[Naming Conventions](Documentation/NamingConventions.md):** The "Rules." A crucial document for keeping the project clean and consistent, especially when collaborating.
+* **[Task Planning Docs](Documentation):** Includes our rough `TempPlan.md` and the more refined `NextSessionTasks.md` for our current sprint.
+
+---
+
+## Contributing & Learning
+
+This is an open-source project designed for learning. You are encouraged to:
+* **Fork the project** and experiment with your own features.
+* **Follow the documentation** to understand *why* things are built the way they are.
+* **Try using the CIGDI framework** for your own prototypes! Use AI to help you draft a GDD or plan your next feature.
+
+This project is licensed under the MIT License. Feel free to use it for your own educational purposes.

@@ -1,0 +1,440 @@
+fileFormatVersion: 2
+guid: 8364554b2f6ff4f4abd78a86a6b83ce7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3242410831019615704
+    second: test gpt jump pink girl_0
+  - first:
+      213: 2529007456319502173
+    second: test gpt jump pink girl_1
+  - first:
+      213: -3335641677833068649
+    second: test gpt jump pink girl_2
+  - first:
+      213: -2055592942385382884
+    second: test gpt jump pink girl_3
+  - first:
+      213: 6484987006690048391
+    second: test gpt jump pink girl_4
+  - first:
+      213: 1746822689381862104
+    second: test gpt jump pink girl_5
+  - first:
+      213: 5823654108377889202
+    second: test gpt jump pink girl_6
+  - first:
+      213: -289465771199801201
+    second: test gpt jump pink girl_7
+  - first:
+      213: 7565488819327422305
+    second: test gpt jump pink girl_8
+  - first:
+      213: 6798806502911898680
+    second: test gpt jump pink girl_9
+  - first:
+      213: 4108562601847563138
+    second: test gpt jump pink girl_10
+  - first:
+      213: 2488410123161862706
+    second: test gpt jump pink girl_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: test gpt jump pink girl_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1125
+        width: 270
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a52393784a003d0800000000000000
+      internalID: -3242410831019615704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test gpt jump pink girl_1
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1114
+        width: 283
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57fc3cd1e6d81320800000000000000
+      internalID: 2529007456319502173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test gpt jump pink girl_2
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 1098
+        width: 279
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f95c6219b65b1d0800000000000000
+      internalID: -3335641677833068649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test gpt jump pink girl_3
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 1098
+        width: 287
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ab1522c111973e0800000000000000
+      internalID: -2055592942385382884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test gpt jump pink girl_4
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 1121
+        width: 259
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789b8cad25d4ff950800000000000000
+      internalID: 6484987006690048391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test gpt jump pink girl_5
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 567
+        width: 257
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dac23e1bf5fd3810800000000000000
+      internalID: 1746822689381862104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test gpt jump pink girl_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 568
+        width: 274
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9bb987e86c1d050800000000000000
+      internalID: 5823654108377889202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test gpt jump pink girl_7
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 566
+        width: 297
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88500d2a6c9bfbf0800000000000000
+      internalID: -289465771199801201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test gpt jump pink girl_8
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 562
+        width: 268
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f433c5ff30ef860800000000000000
+      internalID: 7565488819327422305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test gpt jump pink girl_9
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 562
+        width: 268
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834fda62e763a5e50800000000000000
+      internalID: 6798806502911898680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test gpt jump pink girl_10
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 43
+        width: 269
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28324941beb840930800000000000000
+      internalID: 4108562601847563138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test gpt jump pink girl_11
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 39
+        width: 288
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2328c86a2db988220800000000000000
+      internalID: 2488410123161862706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      test gpt jump pink girl_0: -3242410831019615704
+      test gpt jump pink girl_1: 2529007456319502173
+      test gpt jump pink girl_10: 4108562601847563138
+      test gpt jump pink girl_11: 2488410123161862706
+      test gpt jump pink girl_2: -3335641677833068649
+      test gpt jump pink girl_3: -2055592942385382884
+      test gpt jump pink girl_4: 6484987006690048391
+      test gpt jump pink girl_5: 1746822689381862104
+      test gpt jump pink girl_6: 5823654108377889202
+      test gpt jump pink girl_7: -289465771199801201
+      test gpt jump pink girl_8: 7565488819327422305
+      test gpt jump pink girl_9: 6798806502911898680
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

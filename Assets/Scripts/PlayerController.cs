@@ -20,6 +20,11 @@ public class PlayerController : MonoBehaviour
     private int currentHealth;
     private bool isDead;
     private GameStateManager gameStateManager;
+    private Animator animator; // Reference to the Animator component
+
+    // Animation parameter names
+    private const string IS_GROUNDED_PARAM = "IsGrounded";
+    private const string VERTICAL_VELOCITY_PARAM = "VerticalVelocity";
 
     // Start is called before the first frame update
     void Start()
@@ -30,10 +35,16 @@ public class PlayerController : MonoBehaviour
         currentHealth = maxHealth;
         isDead = false;
         gameStateManager = FindObjectOfType<GameStateManager>();
+        animator = GetComponent<Animator>();
         
         if (gameStateManager == null)
         {
             Debug.LogError("PlayerController: GameStateManager not found in scene!");
+        }
+        
+        if (animator == null)
+        {
+            Debug.LogError("PlayerController: Animator component not found!");
         }
         
         Debug.Log($"PlayerController: Started with {currentHealth} health");
@@ -71,6 +82,13 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isGrounded = false;
+        }
+
+        // Update animation parameters
+        if (animator != null)
+        {
+            animator.SetBool(IS_GROUNDED_PARAM, isGrounded);
+            animator.SetFloat(VERTICAL_VELOCITY_PARAM, rb.velocity.y);
         }
     }
 
