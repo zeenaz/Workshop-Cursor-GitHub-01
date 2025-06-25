@@ -41,7 +41,7 @@ This Unity project and its `Documentation/` folder serve as a real-world example
 ### Setup Instructions
 1.  **Clone the Repository:**
     ```bash
-    git clone [your-repository-url]
+    git clone https://github.com/zeenaz/Workshop-Cursor-GitHub-01.git
     ```
 2.  **Open in Unity:** Open the project folder using Unity Hub.
 3.  **Explore the Scene:** The main scene is located in `Assets/Scenes/`. Open it to see the player, ground, and enemy setup.
